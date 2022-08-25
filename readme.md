@@ -7,7 +7,7 @@ The AmTech Console Logger is an addon to Laravel's log system that auto logs to 
 Use the Composer to install into Laravel project.
 
 ```bash
-composer install american-technologies/laravel-console-logger
+composer require american-technologies/laravel-console-logger
 ```
 
 ## Usage
