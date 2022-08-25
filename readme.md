@@ -1,6 +1,6 @@
 # AmTech Laravel Console Logger
 
-THe AmTech Console Logger is an addon to Laravel's log system that auto logs to whatever log system is setup and also logs to the terminal window with color coding depending on log type.
+The AmTech Console Logger is an addon to Laravel's log system that auto logs to whatever log system is setup and also logs to the terminal window with color coding depending on log type.
 
 ## Installation
 
