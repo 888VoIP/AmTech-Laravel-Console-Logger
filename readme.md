@@ -17,10 +17,10 @@ use AmericanTechnologies\ConsoleLogger;
 
 /*
 *
-* $message (String) : The log message
-* $type (String) : Is the log type (info, warning, error, title, announcement, notice, success)
-* $data (Array) : Array of data associated with log (does not output to console/terminal window)
-* $consoleOnly (Bool) : True or False for whether it is solely meant for the console
+* $message (String - required) : The log message
+* $type (String - required) : Is the log type (info, warning, error, title, announcement, notice, success)
+* $data (Array  - optional) : Array of data associated with log (does not output to console/terminal window)
+* $consoleOnly (Bool - optional) : True or False for whether it is solely meant for the console
 *
 */
 ConsoleLogger::log($message, $type, $data, $consoleOnly);
