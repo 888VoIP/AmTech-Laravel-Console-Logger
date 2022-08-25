@@ -13,19 +13,24 @@ composer install american-technologies/laravel-console-logger
 ## Usage
 
 ```php
-use AmericanTechnologies\ConsoleLogger;
+use AmericanTechnologies\ConsoleLogger\ConsoleLogger;
 
-/*
-*
-* $message (String - required) : The log message
-* $type (String - required) : Is the log type (info, warning, error, title, announcement, notice, success)
-* $data (Array  - optional) : Array of data associated with log (does not output to console/terminal window)
-* $consoleOnly (Bool - optional) : True or False for whether it is solely meant for the console
-*
-*/
+...
+
 ConsoleLogger::log($message, $type, $data, $consoleOnly);
 
 ```
+
+
+### Options
+
+| Option            | Type     | Required | Description                                     |
+| ----------------- | -------- | -------- | ----------------------------------------------- |
+| `message`         | `string` | yes      | Message you want to log                         |
+| `type`            | `string` | yes      | Type of log (info, success, warning, error)     |
+| `data`            | `array`  | no       | Array of data (will not be logged to console)   |
+| `consoleOnly`     | `bool`   | no       | Log to console only versus log file             |
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
