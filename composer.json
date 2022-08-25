@@ -1,11 +1,11 @@
 {
-    "name": "american-technologies/terminal-logger",
-    "description": "A logging bundle that allows you to write to Laravel logs & echo the logs to the terminal",
+    "name": "american-technologies/laravel-console-logger",
+    "description": "A logging bundle that allows you to write to Laravel logs & log to the console",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "AmericanTechnologies\\TerminalLogger\\": "src/"
+            "AmericanTechnologies\\ConsoleLogger\\": "src/"
         }
     },
     "authors": [
@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
           "providers": [
-            "AmericanTechnologies\\TerminalLogger\\"
+            "AmericanTechnologies\\ConsoleLogger\\"
           ]
         }
       }

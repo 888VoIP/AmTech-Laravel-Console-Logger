@@ -1,10 +1,10 @@
 <?php
 
-namespace AmericanTechnologies\TerminalLogger;
+namespace AmericanTechnologies\ConsoleLogger;
 
 use Illuminate\Support\Facades\Log;
 
-class TerminalLogger
+class ConsoleLogger
 {
 
   /*
