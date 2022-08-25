@@ -1,0 +1,19 @@
+{
+    "name": "american-technologies/terminal-logger",
+    "description": "A logging bundle that allows you to write to Laravel logs & echo the logs to the terminal",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AmericanTechnologies\\TerminalLogger\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tom Burtless",
+            "email": "tomdburtless@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
