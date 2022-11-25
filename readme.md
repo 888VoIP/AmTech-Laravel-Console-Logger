@@ -28,7 +28,7 @@ ConsoleLogger::log($message, $type, $data, $consoleOnly);
 | ----------------- | -------- | -------- | ----------------------------------------------- |
 | `message`         | `string` | yes      | Message you want to log                         |
 | `type`            | `string` | yes      | Type of log (info, success, warning, error)     |
-| `data`            | `array`  | no       | Array of data (will not be logged to console)   |
+| `data`            | `array|object`  | no       | Array of data (will not be logged to console)   |
 | `consoleOnly`     | `bool`   | no       | Log to console only versus log file             |
 
 

@@ -10,8 +10,17 @@ class ConsoleLogger
   /*
   * Log function - logs data to log file,
   */
-  public static function log($text, $type, $data = array(), $consoleOnly = false) {
-    if($consoleOnly == false) {
+  public static function log(string $text, string $type, array|object $data = array(), bool $consoleOnly = false)
+  {
+
+    if (app()->runningUnitTests()) {
+      return;
+    }
+
+    if (is_object($data)) {
+      $data = json_decode(json_encode($data), true);
+    }
+    if ($consoleOnly == false) {
       // set log based on log type
       switch ($type) {
         case 'warning':
@@ -20,7 +29,7 @@ class ConsoleLogger
         case 'error':
           Log::error(config('app.name') . ' - ' . $text, $data);
           break;
-        default :
+        default:
           Log::info($text, $data);
           break;
       }
@@ -28,7 +37,7 @@ class ConsoleLogger
 
 
     // log to command line
-    if(app()->runningInConsole()) {
+    if (app()->runningInConsole()) {
       switch ($type) {
         case 'warning':
           $color = "\e[33m";
@@ -48,7 +57,7 @@ class ConsoleLogger
         case 'announcement':
           $color = "\e[34m";
           break;
-        default :
+        default:
           $color = "\e[36m";
           break;
       }
