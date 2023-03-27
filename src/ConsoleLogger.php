@@ -24,13 +24,13 @@ class ConsoleLogger
       // set log based on log type
       switch ($type) {
         case 'warning':
-          Log::warning($text, $data);
+          Log::warning(getmypid().': '.$text, $data);
           break;
         case 'error':
-          Log::error(config('app.name') . ' - ' . $text, $data);
+          Log::error(getmypid() . ': '. getmypid() . ': ' . config('app.name') . ' - ' . $text, $data);
           break;
         default:
-          Log::info($text, $data);
+          Log::info(getmypid() . ': ' . $text, $data);
           break;
       }
     }
